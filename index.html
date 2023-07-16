@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav menu demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+           
+            <a href="#" class="logo">Eshwar</a>
+        
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="line">
+                <div class="main-line"></div>
+                <div class="main-line"></div>
+                <div class="main-line"></div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main">
+
+    </div>
+</body>
+<script>
+    const menu = document.querySelector('.line')
+    const menulist = document.querySelector('nav ul')
+
+    menu.addEventListener('click',()=>{
+        menulist.classList.toggle('showmenu')
+    })
+</script>
+</html>
